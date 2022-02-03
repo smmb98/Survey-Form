@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div id="title">
+        <h1>Sunshine Products Survey Form</h1>
+        <p id="description">
+          Please provide your valuable experience of our products
+        </p>
+      </div>
+
+      <form id="survey-form">
+        <div class="text-inp">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-attr"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-attr"
+            placeholder="Enter your Email"
+            required
+          />
+
+          <label for="number">Age<span>(optional)</span></label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            class="form-attr"
+            min="10"
+            max="99"
+            placeholder="Age"
+          />
+        </div>
+
+        <label>Which product did you experienced?</label>
+        <select id="dropdown" name="role" class="form-attr" required>
+          <option style="color: #495057" disabled selected value>
+            Select the product
+          </option>
+          <option value="shampoo">Shampoo</option>
+          <option value="barsoap">Bar Soap</option>
+          <option value="liquidsoap">Liquid Soap</option>
+          <option value="toothpaste">Toothpaste</option>
+          <option value="facewash">Face Wash</option>
+        </select>
+
+        <label>What was your experience with our product?</label>
+        <label for="radio"
+          ><input
+            type="radio"
+            name="experience"
+            class="radio-input"
+            value="excellent"
+            required
+          />Excellent</label
+        >
+        <label for="radio"
+          ><input
+            type="radio"
+            name="experience"
+            class="radio-input"
+            value="good"
+            required
+          />Good</label
+        >
+        <label for="radio"
+          ><input
+            type="radio"
+            name="experience"
+            class="radio-input"
+            value="normal"
+            required
+          />Normal</label
+        >
+        <label for="radio"
+          ><input
+            type="radio"
+            name="experience"
+            class="radio-input"
+            value="bad"
+            required
+          />Bad</label
+        >
+        <label for="radio" id="options"
+          ><input
+            type="radio"
+            name="experience"
+            class="radio-input"
+            value="worst"
+            required
+          />Worst</label
+        >
+
+        <label
+          >Where do you want to see the improvement?<span class="clue"
+            >(Check all that apply)</span
+          ></label
+        >
+        <label for="checkbox"
+          ><input
+            type="checkbox"
+            name="improve"
+            class="check-input"
+            value="scent"
+            required
+          />Scent</label
+        >
+        <label for="checkbox"
+          ><input
+            type="checkbox"
+            name="improve"
+            class="check-input"
+            value="size"
+            required
+          />Size</label
+        >
+        <label for="checkbox"
+          ><input
+            type="checkbox"
+            name="improve"
+            class="check-input"
+            value="price"
+            required
+          />Price</label
+        >
+        <label for="checkbox"
+          ><input
+            type="checkbox"
+            name="improve"
+            class="check-input"
+            value="packaging"
+            required
+          />Packaging</label
+        >
+        <label for="checkbox" id="options"
+          ><input
+            type="checkbox"
+            name="improve"
+            class="check-input"
+            value="effectiveness"
+            required
+          />Effectiveness</label
+        >
+
+        <label>Would you refer our products to others?</label>
+        <label for="radio"
+          ><input
+            type="radio"
+            name="recommend"
+            class="radio-input"
+            value="mostdefinitely"
+            required
+          />Most Definitely</label
+        >
+        <label for="radio"
+          ><input
+            type="radio"
+            name="recommend"
+            class="radio-input"
+            value="maybe"
+            required
+          />Maybe</label
+        >
+        <label for="radio"
+          ><input
+            type="radio"
+            name="recommend"
+            class="radio-input"
+            value="notsure"
+            required
+          />Not Sure</label
+        >
+        <label for="radio" id="options"
+          ><input
+            type="radio"
+            name="recommend"
+            class="radio-input"
+            value="never"
+            required
+          />Never</label
+        >
+
+        <label>Please give your valuable suggestions:</label>
+        <textarea
+          id="suggestions"
+          class="input-textarea"
+          name="suggestions"
+          placeholder="Type your suggestions here"
+        ></textarea>
+
+        <button type="submit" id="submit" class="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
